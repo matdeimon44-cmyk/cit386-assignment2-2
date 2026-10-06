@@ -116,5 +116,11 @@ A fixed-size disk reserves its configured storage capacity immediately. In my te
 This experiment demonstrated why administrators need to consider both the virtual capacity presented to a VM and the actual storage consumed by VHDX files on the Hyper-V host.
 
 
-Crear imágenes
-Reimagina, ilustra y edita
+
+## 6. Verification
+
+The Hyper-V VM successfully booted Ubuntu Server 24.04.3 LTS, and I logged in with my local user account.
+
+Both virtual disk configurations were tested from the same VM. Disk sizes were measured using Hyper-V Virtual Hard Disk Properties on the host rather than relying only on guest operating system measurements.
+
+The final measurements confirmed the expected behavioral difference between dynamically expanding and fixed-size VHDX disks.
